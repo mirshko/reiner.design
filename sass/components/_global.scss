@@ -1,0 +1,105 @@
+html {
+	margin: 48px;
+	@media #{$smallScreen} {
+		margin: 32px;
+	}
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: $fontFamily;
+	// font-family: "SF Display", sans-serif;
+	line-height: 1.5;
+}
+
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+main {
+	max-width: 1000px;
+}
+
+section {
+	margin-bottom: 32px;
+}
+
+.logo {
+	height: 96px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+ul, ol {
+	list-style: none;
+	padding-left: 0;
+	
+	li {
+		margin-bottom: 1em;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex-grid { display: flex; }
+@media #{$smallScreen} {
+	.flex-grid { display: block; }
+}
+
+.col {
+	flex: 1;
+	
+	&:not(:first-child) { margin-left: 16px }
+	&:not(:last-child) { margin-right: 16px }
+}
+@media #{$smallScreen} {
+	.col {
+		&:not(:first-child) { margin-left: 0 }
+		&:not(:last-child) { margin-right: 0 }
+	}
+}
+
+
+a {
+	color: $black;
+	padding-bottom: 2px;
+	border-bottom: 2px solid $black;
+	font-weight: 500;
+}
+
+.github {
+	color: $github;
+	border-bottom: 2px solid $github;
+}
+
+.twitter {
+	color: $twitter;
+	border-bottom: 2px solid $twitter;
+}
+
+.medium {
+	color: $medium;
+	border-bottom: 2px solid $medium;
+}
+
+.dribbble {
+	color: $dribbble;
+	border-bottom: 2px solid $dribbble;
+}
+
+.keybase {
+	color: $keybase;
+	border-bottom: 2px solid $keybase;
+	&::before { background-color: rgba($keybase, 0.12); }
+}
