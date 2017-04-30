@@ -369,16 +369,32 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: inherit; }
+
 html {
-  margin: 48px; }
+  margin: 64px; }
   @media only screen and (max-width: 600px) {
     html {
-      margin: 32px; } }
+      margin: 40px; } }
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Hack", monospace;
-  line-height: 1.5; }
+  font-family: Hack, monospace;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0; }
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 16px; } }
+
+::selection {
+  color: #ffffff;
+  background: #2962FF; }
+
+::-moz-selection {
+  color: #ffffff;
+  background: #2962FF; }
 
 img {
   -webkit-user-drag: none;
@@ -391,25 +407,35 @@ main {
   max-width: 1000px; }
 
 section {
-  margin-bottom: 32px; }
+  margin-bottom: 40px; }
 
 .logo {
-  height: 96px; }
+  height: 96px;
+  width: 96px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/logo.svg"); }
+  .logo:hover {
+    background-image: url("../../img/logoHover.svg"); }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding-left: 0; }
-  ul li, ol li {
-    margin-bottom: 1em;
+  ul li,
+  ol li {
+    margin-bottom: 12px;
     word-break: break-all;
     word-wrap: break-word; }
-
-a {
-  text-decoration: none; }
 
 .flex-grid {
   display: flex; }
@@ -432,29 +458,65 @@ a {
     margin-right: 0; } }
 
 a {
-  color: #212121;
+  text-decoration: none;
+  color: #2962FF;
   padding-bottom: 2px;
-  border-bottom: 2px solid #212121;
-  font-weight: 500; }
+  outline: none;
+  font-weight: bold; }
+  a:hover, a:focus, a:active {
+    border-bottom: 2px solid #2962FF; }
 
 .github {
-  color: #6762a6;
-  border-bottom: 2px solid #6762a6; }
+  color: #6762a6; }
+  .github:hover, .github:focus, .github:active {
+    border-bottom: 2px solid #6762a6; }
+  .github::selection {
+    color: #ffffff;
+    background: #6762a6; }
+  .github::-moz-selection {
+    color: #ffffff;
+    background: #6762a6; }
 
 .twitter {
-  color: #1da1f2;
-  border-bottom: 2px solid #1da1f2; }
+  color: #1da1f2; }
+  .twitter:hover, .twitter:focus, .twitter:active {
+    border-bottom: 2px solid #1da1f2; }
+  .twitter::selection {
+    color: #ffffff;
+    background: #1da1f2; }
+  .twitter::-moz-selection {
+    color: #ffffff;
+    background: #1da1f2; }
 
 .medium {
-  color: #00AB6C;
-  border-bottom: 2px solid #00AB6C; }
+  color: #00AB6C; }
+  .medium:hover, .medium:focus, .medium:active {
+    border-bottom: 2px solid #00AB6C; }
+  .medium::selection {
+    color: #ffffff;
+    background: #00AB6C; }
+  .medium::-moz-selection {
+    color: #ffffff;
+    background: #00AB6C; }
 
 .dribbble {
-  color: #c13584;
-  border-bottom: 2px solid #c13584; }
+  color: #c13584; }
+  .dribbble:hover, .dribbble:focus, .dribbble:active {
+    border-bottom: 2px solid #c13584; }
+  .dribbble::selection {
+    color: #ffffff;
+    background: #c13584; }
+  .dribbble::-moz-selection {
+    color: #ffffff;
+    background: #c13584; }
 
 .keybase {
-  color: #33a0ff;
-  border-bottom: 2px solid #33a0ff; }
-  .keybase::before {
-    background-color: rgba(51, 160, 255, 0.12); }
+  color: #33a0ff; }
+  .keybase:hover {
+    border-bottom: 2px solid #33a0ff; }
+  .keybase::selection {
+    color: #ffffff;
+    background: #33a0ff; }
+  .keybase::-moz-selection {
+    color: #ffffff;
+    background: #33a0ff; }

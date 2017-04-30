@@ -1,16 +1,35 @@
+* {
+	box-sizing: inherit;
+}
+
 html {
-	margin: 48px;
+	margin: $contentMargin;
 	@media #{$smallScreen} {
-		margin: 32px;
+		margin: $contentMargin / 1.6;
 	}
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	font-family: $fontFamily;
-	// font-family: "SF Display", sans-serif;
-	line-height: 1.5;
+	font-size: $fontSize;
+	@media #{$smallScreen} { font-size: 16px; }
+	line-height: $lineHint;
+	margin: 0;
 }
+
+@mixin highlight($backgroundColor, $color) {
+	&::selection {
+		color: $color;
+		background: $backgroundColor;
+	}
+	&::-moz-selection {
+		color: $color;
+		background: $backgroundColor;
+	}
+}
+
+@include highlight($linkColor, $white);
 
 img {
 	-webkit-user-drag: none;
@@ -20,43 +39,49 @@ img {
 	user-drag: none;
 }
 
-main {
-	max-width: 1000px;
-}
+main { max-width: 1000px; }
 
-section {
-	margin-bottom: 32px;
-}
+section { margin-bottom: $sectionMargin; }
 
 .logo {
 	height: 96px;
+	width: 96px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	background-image: url('../../img/logo.svg');
+	&:hover { background-image: url('../../img/logoHover.svg'); }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
-ul, ol {
+ul,
+ol {
 	list-style: none;
 	padding-left: 0;
 	
 	li {
-		margin-bottom: 1em;
+		margin-bottom: 12px;
 		word-break: break-all;
 		word-wrap: break-word;
 	}
 }
 
-a {
-	text-decoration: none;
-}
+// DISPLAY
 
 .flex-grid { display: flex; }
 @media #{$smallScreen} {
 	.flex-grid { display: block; }
 }
-
 .col {
 	flex: 1;
 	
@@ -70,36 +95,59 @@ a {
 	}
 }
 
+// LINKS
 
 a {
-	color: $black;
+	text-decoration: none;
+	color: $linkColor;
 	padding-bottom: 2px;
-	border-bottom: 2px solid $black;
-	font-weight: 500;
+	outline: none;
+	font-weight: bold;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom: 2px solid $linkColor; }
 }
 
 .github {
 	color: $github;
-	border-bottom: 2px solid $github;
+		
+	&:hover,
+	&:focus,
+	&:active { border-bottom: 2px solid $github; }
+	@include highlight($github, $white);
 }
 
 .twitter {
 	color: $twitter;
-	border-bottom: 2px solid $twitter;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom: 2px solid $twitter; }
+	@include highlight($twitter, $white);
 }
 
 .medium {
 	color: $medium;
-	border-bottom: 2px solid $medium;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom: 2px solid $medium; }
+	@include highlight($medium, $white);
 }
 
 .dribbble {
 	color: $dribbble;
-	border-bottom: 2px solid $dribbble;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom: 2px solid $dribbble; }
+	@include highlight($dribbble, $white);
 }
 
 .keybase {
 	color: $keybase;
-	border-bottom: 2px solid $keybase;
-	&::before { background-color: rgba($keybase, 0.12); }
+	
+	&:hover { border-bottom: 2px solid $keybase; }
+	@include highlight($keybase, $white);
 }
