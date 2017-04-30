@@ -373,7 +373,8 @@ template {
   box-sizing: inherit; }
 
 html {
-  margin: 64px; }
+  margin: 64px;
+  background-color: #FAFAFA; }
   @media only screen and (max-width: 600px) {
     html {
       margin: 40px; } }
@@ -389,11 +390,11 @@ body {
       font-size: 16px; } }
 
 ::selection {
-  color: #ffffff;
+  color: #FAFAFA;
   background: #2962FF; }
 
 ::-moz-selection {
-  color: #ffffff;
+  color: #FAFAFA;
   background: #2962FF; }
 
 img {
@@ -409,14 +410,12 @@ main {
 section {
   margin-bottom: 40px; }
 
-.logo {
+.logo svg {
+  fill: #212121;
   height: 96px;
-  width: 96px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../img/logo.svg"); }
-  .logo:hover {
-    background-image: url("../../img/logoHover.svg"); }
+  width: 96px; }
+  .logo svg:hover {
+    fill: #2962FF; }
 
 h1,
 h2,
@@ -471,10 +470,10 @@ a {
   .github:hover, .github:focus, .github:active {
     border-bottom: 2px solid #6762a6; }
   .github::selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #6762a6; }
   .github::-moz-selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #6762a6; }
 
 .twitter {
@@ -482,10 +481,10 @@ a {
   .twitter:hover, .twitter:focus, .twitter:active {
     border-bottom: 2px solid #1da1f2; }
   .twitter::selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #1da1f2; }
   .twitter::-moz-selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #1da1f2; }
 
 .medium {
@@ -493,10 +492,10 @@ a {
   .medium:hover, .medium:focus, .medium:active {
     border-bottom: 2px solid #00AB6C; }
   .medium::selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #00AB6C; }
   .medium::-moz-selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #00AB6C; }
 
 .dribbble {
@@ -504,10 +503,10 @@ a {
   .dribbble:hover, .dribbble:focus, .dribbble:active {
     border-bottom: 2px solid #c13584; }
   .dribbble::selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #c13584; }
   .dribbble::-moz-selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #c13584; }
 
 .keybase {
@@ -515,8 +514,8 @@ a {
   .keybase:hover {
     border-bottom: 2px solid #33a0ff; }
   .keybase::selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #33a0ff; }
   .keybase::-moz-selection {
-    color: #ffffff;
+    color: #FAFAFA;
     background: #33a0ff; }

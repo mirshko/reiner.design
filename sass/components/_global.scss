@@ -7,6 +7,7 @@ html {
 	@media #{$smallScreen} {
 		margin: $contentMargin / 1.6;
 	}
+	background-color: $primary;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 	}
 }
 
-@include highlight($linkColor, $white);
+@include highlight($link, $white);
 
 img {
 	-webkit-user-drag: none;
@@ -43,15 +44,12 @@ main { max-width: 1000px; }
 
 section { margin-bottom: $sectionMargin; }
 
-.logo {
+.logo svg {
+	fill: $black;
+	&:hover { fill: $link; }
+	
 	height: 96px;
 	width: 96px;
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	background-image: url('../../img/logo.svg');
-	&:hover { background-image: url('../../img/logoHover.svg'); }
 }
 
 h1,
@@ -99,14 +97,14 @@ ol {
 
 a {
 	text-decoration: none;
-	color: $linkColor;
+	color: $link;
 	padding-bottom: 2px;
 	outline: none;
 	font-weight: bold;
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: 2px solid $linkColor; }
+	&:active { border-bottom: 2px solid $link; }
 }
 
 .github {
