@@ -414,7 +414,7 @@ section {
   fill: #212121;
   height: 96px;
   width: 96px; }
-  .logo svg:hover {
+  .logo svg:hover, .logo svg:focus {
     fill: #2962FF; }
 
 h1,
@@ -461,9 +461,11 @@ a {
   color: #2962FF;
   padding-bottom: 2px;
   outline: none;
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 2px solid rgba(41, 98, 255, 0);
+  transition: border-bottom .2s ease-out; }
   a:hover, a:focus, a:active {
-    border-bottom: 2px solid #2962FF; }
+    border-bottom: 2px solid #2962ff; }
 
 .github {
   color: #6762a6; }

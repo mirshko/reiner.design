@@ -46,7 +46,8 @@ section { margin-bottom: $sectionMargin; }
 
 .logo svg {
 	fill: $black;
-	&:hover { fill: $link; }
+	&:hover,
+	&:focus { fill: $link; }
 	
 	height: 96px;
 	width: 96px;
@@ -102,9 +103,12 @@ a {
 	outline: none;
 	font-weight: bold;
 	
+	border-bottom: 2px solid rgba($link, 0.0);
+	transition: border-bottom .2s ease-out;
+	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: 2px solid $link; }
+	&:active { border-bottom: 2px solid rgba($link, 1.0); }
 }
 
 .github {
