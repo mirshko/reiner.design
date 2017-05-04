@@ -49,6 +49,8 @@ section { margin-bottom: $sectionMargin; }
 	&:hover,
 	&:focus { fill: $link; }
 	
+	transition: fill .2s ease-out;
+	
 	height: 96px;
 	width: 96px;
 }

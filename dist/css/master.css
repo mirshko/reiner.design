@@ -412,6 +412,7 @@ section {
 
 .logo svg {
   fill: #212121;
+  transition: fill .2s ease-out;
   height: 96px;
   width: 96px; }
   .logo svg:hover, .logo svg:focus {
