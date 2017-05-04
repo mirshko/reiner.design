@@ -45,9 +45,8 @@ main { max-width: 1000px; }
 section { margin-bottom: $sectionMargin; }
 
 .logo svg {
-	fill: $black;
-	&:hover,
-	&:focus { fill: $link; }
+	// fill: $black;
+	&:hover { fill: $link; }
 	
 	transition: fill .2s ease-out;
 	

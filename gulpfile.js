@@ -77,7 +77,9 @@ gulp.task('html', () => {
 gulp.task('useref', ['sass', 'js'], () => {
 	return gulp.src('./*.html')
 		.pipe($.useref())
-		.pipe($.if('*.js', $.uglify()))
+		.pipe($.if('*.js', $.uglify({
+			mangle: true
+		})))
 		.pipe($.if('*.css', $.cssnano({
 			mergeLonghand: false
 		})))

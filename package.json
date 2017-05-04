@@ -35,7 +35,8 @@
       "Vue"
     ],
     "rules": {
-      "no-unused-vars": "off"
+      "no-unused-vars": "off",
+      "prefer-arrow-callback": "off"
     },
     "quiet": true
   },
