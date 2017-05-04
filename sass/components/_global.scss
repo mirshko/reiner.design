@@ -98,7 +98,7 @@ ol {
 
 // LINKS
 
-a {
+a:not(.logo){
 	text-decoration: none;
 	color: $link;
 	padding-bottom: 2px;
