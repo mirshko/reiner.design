@@ -457,7 +457,8 @@ ol {
   .col:not(:last-child) {
     margin-right: 0; } }
 
-a:not(.logo) {
+p a,
+li a {
   text-decoration: none;
   color: #2962FF;
   padding-bottom: 2px;
@@ -465,7 +466,10 @@ a:not(.logo) {
   font-weight: bold;
   border-bottom: 2px solid rgba(41, 98, 255, 0);
   transition: border-bottom .2s ease-out; }
-  a:not(.logo):hover, a:not(.logo):focus, a:not(.logo):active {
+  p a:hover, p a:focus, p a:active,
+  li a:hover,
+  li a:focus,
+  li a:active {
     border-bottom: 2px solid #2962ff; }
 
 .github {
