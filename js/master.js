@@ -4,11 +4,12 @@ const el = document.querySelectorAll('.link');
 for (let i = 0; i < el.length; i++) {
 	el[i].addEventListener('mouseover', function () {
 		const fill = this.getAttribute('data-logo-fill');
-		const logo = document.getElementById('logo');
-		logo.setAttribute('fill', String(fill));
+		const header = document.getElementById('header');
+		header.style.backgroundColor = String(fill);
+		console.log(fill);
 	}, false);
 	el[i].addEventListener('mouseout', function () {
-		const logo = document.getElementById('logo');
-		logo.setAttribute('fill', '#212121');
+		const header = document.getElementById('header');
+		header.style.backgroundColor = '#2962FF';
 	}, false);
 }

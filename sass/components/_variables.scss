@@ -1,24 +1,29 @@
-$smallScreen: "only screen and (max-width: 600px)";
 
-$fontFamily: Hack, monospace;
-$fontSize: 18px;
-$lineHint: 1.6;
+$fontSize: 20px;
+$lineHeight: 1.6;
 
-$contentMargin: 64px;
+$padding: 64px;
 $sectionMargin: 40px;
 
+$borderThickness: .1em;
+
+$easing: .2s ease-out;
+
+$mobile: 768px;
+$widescreen: 1192px;
 
 // COLORS
 
-$white: #FAFAFA !default;
+$white: #fff !default;
 $black: #212121 !default;
+$A700: #2962FF !default// Material Blue A700 
 
-$primary: $white;
+$primary: $A700;
 $secondary: $black;
-$link: #2962FF !default; // Material Blue A700 
+$link: $A700 !default; 
 
 $twitter: #1da1f2 !default;
-$github: #6762a6 !default;
+$github: #6e5494 !default;
 $dribbble: #c13584 !default;
 $medium: #00AB6C !default;
 $keybase: #33a0ff !default;

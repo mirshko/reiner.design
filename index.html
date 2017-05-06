@@ -8,12 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- PAGE -->
 	<title>Jeff Reiner; Web Developer & Designer</title>
-	<meta name="theme-color" content="#2962FF">
+	<meta name="theme-color" content="#ffffff">
 	<!-- STYLES -->
 	<!-- build:css styles.css -->
 	<link rel="stylesheet" href="dist/css/master.css">
 	<!-- endbuild -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+	<link href="//fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
 	<!-- FAVICON -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,21 +23,15 @@
 </head>
 
 <body>
-	<header>
-		<section>
-			<a class="logo" href="/">
-				<svg id="logo" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns"><title>B</title><desc>Created using Figma</desc><g figma:type="canvas"><use xlink:href="#a" figma:type="vector"/></g><defs><path id="a" fill-rule="evenodd" d="M0 0h28v28H0V0zm12 16H4v8h2v-3h4v-2H6v-1h6v-2zm12 0h-8v8h2v-3h4v-2h-4v-1h6v-2zm-8-4V4h8v2h-6v1h4v2h-4v1h6v2h-8zm-4-8H4v2h4v4H6V8H4v4h6V6h2V4z"/></defs></svg>
-			</a>
-		</section>
+	<header id="header">
+		<div class="logo"><svg fill="#fff" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns"><g figma:type="canvas"><use xlink:href="#a" figma:type="vector"/></g><defs><path id="a" fill-rule="evenodd" d="M0 0h28v28H0V0zm12 16H4v8h2v-3h4v-2H6v-1h6v-2zm12 0h-8v8h2v-3h4v-2h-4v-1h6v-2zm-8-4V4h8v2h-6v1h4v2h-4v1h6v2h-8zm-4-8H4v2h4v4H6V8H4v4h6V6h2V4z"/></defs></svg></div>
+		<h1>👋 My name is Jeff Reiner, I'm a web devloper & designer based in Boston.</h1>
+		<h2>I'm currently working at <a class="link" data-logo-fill="#1b5faa" target="_blank"  href="http://onshape.com">Onshape</a>, building and designing the marketing website.</h2>
 	</header>
 	<main>
-		<section class="about">
-			<h1>jeff reiner</h1>
-			<p>Hi, I'm a web developer & designer based in Boston. I work at <a target="_blank" href="http://onshape.com">Onshape</a>, building and designing the marketing website.</p>
-			<p>If you have any questions about my work, or design, or development, or just want to say hi, shoot me an <a target="_blank" href="mailto:jeff@reiner.io">email</a>.</p>
-		</section>
-		<div class="flex-grid">
-			<section class="col projects">
+		<p class="lead">If you have any questions about my work, or design, or development, or just want to say hi, shoot me an <a target="_blank" href="mailto:jeff@reiner.io">email</a>.</p>
+		<div class="flex-grid cols">
+			<div class="col projects">
 				<h2>projects</h2>
 				<ul>
 					<li>Responsive CTA Builder <small>(WIP)</small></li>
@@ -45,18 +39,18 @@
 					<li><a target="_blank" href="http://onshape.com">Onshape.com</a> <small>(Ongoing)</small></li>
 					<li><a target="_blank" href="http://noti.center">Noti</a></li>
 				</ul>
-			</section>
-			<section class="col links">
+			</div>
+			<div class="col links">
 				<h2>Links</h2>
 				<ul>
 					<li><a class="link resume" data-logo-fill="#2962FF" target="_blank" href="http://resume.reiner.io">Résumé</a></li>
-					<li><a class="link github" data-logo-fill="#6762a6" target="_blank" href="http://github.com/mirshko">GitHub</a></li>
+					<li><a class="link github" data-logo-fill="#6e5494" target="_blank" href="http://github.com/mirshko">GitHub</a></li>
 					<li><a class="link dribbble" data-logo-fill="#c13584" target="_blank" href="http://dribbble.com/mirshko">Dribbble</a></li>
 					<li><a class="link twitter" data-logo-fill="#1da1f2" target="_blank" href="http://twitter.com/mirshko">Twitter</a></li>
 					<li><a class="link medium" data-logo-fill="#00AB6C" target="_blank" href="http://blog.reiner.io/">Medium</a></li>
 					<li><a class="link keybase" data-logo-fill="#33a0ff" target="_blank" href="https://keybase.io/mirshko">Keybase</a></li>
 				</ul>
-			</section>
+			</div>
 		</div>
 	</main>
 	<!-- SCRIPTS -->
