@@ -33,10 +33,10 @@ header {
 	h1, h2 { text-transform: inherit; }
 	h1 {
 		line-height: 1.4;
-		font-size: 2.2em;
+		font-size: responsive 32px 80px;
+		upper-font-range: 1440px;
 		
 		@media (min-width: $mobile) {
-			font-size: 4.8vw;
 			margin-bottom: 64px;
 			margin-top: 80px;
 		}
@@ -45,8 +45,10 @@ header {
 	h2 {
 		color: rgba($white, .70);
 		
-		margin-bottom: 32px;
-		font-size: 1.4em;
+		
+		@media (min-width: $mobile) { margin-bottom: 32px; }
+	
+		font-size: 24px;
 		
 		a {
 			text-decoration: none;
