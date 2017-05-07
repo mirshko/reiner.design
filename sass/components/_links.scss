@@ -4,12 +4,15 @@ main a {
 	outline: none;
 	font-weight: bold;
 	
-	border-bottom: $borderThickness solid rgba($link, 0.0);
-	transition: border-bottom-color .2s ease-out; 
+	border-bottom-width: $borderThickness;
+	border-bottom-style: solid;
+	border-bottom-color: rgba($link, 0.0);
+	
+	transition: border-bottom-color $easing;
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: $borderThickness solid rgba($link, 1.0); }
+	&:active { border-bottom-color: rgba($link, 1.0); }
 }
 
 .github {
@@ -17,7 +20,7 @@ main a {
 		
 	&:hover,
 	&:focus,
-	&:active { border-bottom: $borderThickness solid $github; }
+	&:active { border-bottom-color: $github; }
 }
 
 .twitter {
@@ -25,7 +28,7 @@ main a {
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: $borderThickness solid $twitter; }
+	&:active { border-bottom-color: $twitter; }
 }
 
 .medium {
@@ -33,7 +36,7 @@ main a {
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: $borderThickness solid $medium; }
+	&:active { border-bottom-color: $medium; }
 }
 
 .dribbble {
@@ -41,11 +44,11 @@ main a {
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom: $borderThickness solid $dribbble; }
+	&:active { border-bottom-color: $dribbble; }
 }
 
 .keybase {
 	color: $keybase;
 	
-	&:hover { border-bottom: $borderThickness solid $keybase; }
+	&:hover { border-bottom-color: $keybase; }
 }

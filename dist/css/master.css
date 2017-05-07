@@ -417,17 +417,21 @@ header {
       text-decoration: none;
       outline: none;
       color: white;
-      border-bottom: 0.1em solid rgba(255, 255, 255, 0);
-      transition: border-bottom 0.2s ease-out; }
+      border-bottom-width: .125em;
+      border-bottom-style: solid;
+      border-bottom-color: rgba(255, 255, 255, 0);
+      transition: border-bottom-color 0.2s ease-out; }
       header h2 a:hover, header h2 a:focus, header h2 a:active {
-        border-bottom: 0.1em solid white; }
+        border-bottom-color: white; }
 
 main {
   max-width: 1192px; }
   main p:first-child {
     margin-top: 0; }
   main .lead {
-    font-size: 1.2em; }
+    font-size: 24px; }
+    main .lead a {
+      border-bottom-width: .125em; }
 
 img {
   -webkit-user-drag: none;
@@ -485,32 +489,34 @@ main a {
   color: #2962FF;
   outline: none;
   font-weight: bold;
-  border-bottom: 0.1em solid rgba(41, 98, 255, 0);
-  transition: border-bottom .2s ease-out; }
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(41, 98, 255, 0);
+  transition: border-bottom-color 0.2s ease-out; }
   main a:hover, main a:focus, main a:active {
-    border-bottom: 0.1em solid #2962ff; }
+    border-bottom-color: #2962ff; }
 
 .github {
   color: #6e5494; }
   .github:hover, .github:focus, .github:active {
-    border-bottom: 0.1em solid #6e5494; }
+    border-bottom-color: #6e5494; }
 
 .twitter {
   color: #1da1f2; }
   .twitter:hover, .twitter:focus, .twitter:active {
-    border-bottom: 0.1em solid #1da1f2; }
+    border-bottom-color: #1da1f2; }
 
 .medium {
   color: #00AB6C; }
   .medium:hover, .medium:focus, .medium:active {
-    border-bottom: 0.1em solid #00AB6C; }
+    border-bottom-color: #00AB6C; }
 
 .dribbble {
   color: #c13584; }
   .dribbble:hover, .dribbble:focus, .dribbble:active {
-    border-bottom: 0.1em solid #c13584; }
+    border-bottom-color: #c13584; }
 
 .keybase {
   color: #33a0ff; }
   .keybase:hover {
-    border-bottom: 0.1em solid #33a0ff; }
+    border-bottom-color: #33a0ff; }

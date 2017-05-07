@@ -56,12 +56,15 @@ header {
 			
 			color: rgba($white, 1.0);
 			
-			border-bottom: $borderThickness solid rgba($white, 0.0);
-			transition: border-bottom $easing;
+			border-bottom-width: .125em;
+			border-bottom-style: solid;
+			border-bottom-color: rgba($white, 0.0);
+			
+			transition: border-bottom-color $easing;
 			
 			&:hover,
 			&:focus,
-			&:active { border-bottom: $borderThickness solid rgba($white, 1.0); }
+			&:active { border-bottom-color: rgba($white, 1.0); }
 		}
 	}
 }
@@ -71,7 +74,10 @@ main {
 	
 	p:first-child { margin-top: 0; }
 	
-	.lead { font-size: 1.2em; }
+	.lead {
+		font-size: 24px;
+		a { border-bottom-width: .125em; }
+	}
 }
 
 img {
