@@ -6,7 +6,6 @@ for (let i = 0; i < el.length; i++) {
 		const fill = this.getAttribute('data-logo-fill');
 		const header = document.getElementById('header');
 		header.style.backgroundColor = String(fill);
-		console.log(fill);
 	}, false);
 	el[i].addEventListener('mouseout', function () {
 		const header = document.getElementById('header');

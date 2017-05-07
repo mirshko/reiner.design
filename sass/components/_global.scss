@@ -1,10 +1,6 @@
-* {
-	box-sizing: inherit;
-}
+* { box-sizing: inherit; }
 
-html {
-	background-color: $white;
-}
+html { background-color: $white; }
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -19,9 +15,7 @@ body {
 header, main, footer {
 	padding: $padding;
 	
-	@media (max-width: $mobile) {
-		padding: $padding / 1.6;
-	}
+	@media (max-width: $mobile) { padding: $padding / 1.6; }
 }
 
 header {
@@ -109,9 +103,7 @@ ol {
 	list-style: none;
 	padding-left: 0;
 	
-	&:last-child {
-		margin-bottom: 0;
-	}
+	&:last-child { margin-bottom: 0; }
 	
 	li {
 		margin-bottom: 12px;
@@ -125,9 +117,7 @@ ol {
 .flex-grid {
 	display: flex;
 	
-	@media (max-width: $mobile) {
-		display: block;
-	}
+	@media (max-width: $mobile) { display: block; }
 }
 
 .cols {
