@@ -5,7 +5,7 @@ main a {
 	font-weight: bold;
 	
 	border-bottom: $borderThickness solid rgba($link, 0.0);
-	transition: border-bottom .2s ease-out;
+	transition: border-bottom-color .2s ease-out; 
 	
 	&:hover,
 	&:focus,
