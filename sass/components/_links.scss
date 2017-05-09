@@ -1,0 +1,54 @@
+main a {
+	text-decoration: none;
+	color: $link;
+	outline: none;
+	font-weight: bold;
+	
+	border-bottom-width: $borderThickness;
+	border-bottom-style: solid;
+	border-bottom-color: rgba($link, 0.0);
+	
+	transition: border-bottom-color $easing;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom-color: rgba($link, 1.0); }
+}
+
+.github {
+	color: $github;
+		
+	&:hover,
+	&:focus,
+	&:active { border-bottom-color: $github; }
+}
+
+.twitter {
+	color: $twitter;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom-color: $twitter; }
+}
+
+.medium {
+	color: $medium;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom-color: $medium; }
+}
+
+.dribbble {
+	color: $dribbble;
+	
+	&:hover,
+	&:focus,
+	&:active { border-bottom-color: $dribbble; }
+}
+
+.keybase {
+	color: $keybase;
+	
+	&:hover { border-bottom-color: $keybase; }
+}

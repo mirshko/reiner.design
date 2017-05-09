@@ -59,6 +59,7 @@ gulp.task('xo', () => {
 gulp.task('sass', () => {
 	return gulp.src('sass/**/*.+(scss|sass)')
 		.pipe($.sass().on('error', $.sass.logError))
+		.pipe($.rucksack())
 		.pipe(gulp.dest('dist/css'))
 		.pipe(reload({
 			stream: true

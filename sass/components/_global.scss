@@ -1,36 +1,78 @@
-* {
-	box-sizing: inherit;
-}
+* { box-sizing: inherit; }
 
-html {
-	margin: $contentMargin;
-	@media #{$smallScreen} {
-		margin: $contentMargin / 1.6;
-	}
-	background-color: $primary;
-}
+html { background-color: $white; }
 
 body {
 	-webkit-font-smoothing: antialiased;
-	font-family: $fontFamily;
+	font-family: "Work Sans", sans-serif;
+	
 	font-size: $fontSize;
-	@media #{$smallScreen} { font-size: 16px; }
-	line-height: $lineHint;
+	
+	line-height: $lineHeight;
 	margin: 0;
 }
 
-@mixin highlight($backgroundColor, $color) {
-	&::selection {
-		color: $color;
-		background: $backgroundColor;
+header, main, footer {
+	padding: $padding;
+	
+	@media (max-width: $mobile) { padding: $padding / 1.6; }
+}
+
+header {
+	color: $white;
+	background-color: $primary;
+	
+	transition: background-color $easing;
+	
+	h1, h2 { text-transform: inherit; }
+	h1 {
+		line-height: 1.4;
+		font-size: responsive 32px 80px;
+		upper-font-range: 1440px;
+		
+		@media (min-width: $mobile) {
+			margin-bottom: 64px;
+			margin-top: 80px;
+		}
 	}
-	&::-moz-selection {
-		color: $color;
-		background: $backgroundColor;
+	
+	h2 {
+		color: rgba($white, .70);
+		
+		
+		@media (min-width: $mobile) { margin-bottom: 32px; }
+	
+		font-size: 24px;
+		
+		a {
+			text-decoration: none;
+			outline: none;
+			
+			color: rgba($white, 1.0);
+			
+			border-bottom-width: .125em;
+			border-bottom-style: solid;
+			border-bottom-color: rgba($white, 0.0);
+			
+			transition: border-bottom-color $easing;
+			
+			&:hover,
+			&:focus,
+			&:active { border-bottom-color: rgba($white, 1.0); }
+		}
 	}
 }
 
-@include highlight($link, $white);
+main {
+	max-width: $widescreen;
+	
+	p:first-child { margin-top: 0; }
+	
+	.lead {
+		font-size: 24px;
+		a { border-bottom-width: .125em; }
+	}
+}
 
 img {
 	-webkit-user-drag: none;
@@ -40,18 +82,9 @@ img {
 	user-drag: none;
 }
 
-main { max-width: 1000px; }
-
-section { margin-bottom: $sectionMargin; }
-
 .logo svg {
-	// fill: $black;
-	&:hover { fill: $link; }
-	
-	transition: fill .2s ease-out;
-	
-	height: 96px;
-	width: 96px;
+	height: 80px;
+	width: 80px;
 }
 
 h1,
@@ -60,6 +93,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "Space Mono", monospace;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -68,6 +102,8 @@ ul,
 ol {
 	list-style: none;
 	padding-left: 0;
+	
+	&:last-child { margin-bottom: 0; }
 	
 	li {
 		margin-bottom: 12px;
@@ -78,80 +114,21 @@ ol {
 
 // DISPLAY
 
-.flex-grid { display: flex; }
-@media #{$smallScreen} {
-	.flex-grid { display: block; }
+.flex-grid {
+	display: flex;
+	
+	@media (max-width: $mobile) { display: block; }
 }
+
+.cols {
+	margin-left: -16px;
+	margin-right: -16px;
+	margin-top: -16px;
+	
+	&:not(:last-child) { margin-bottom: 16px; }
+}
+
 .col {
 	flex: 1;
-	
-	&:not(:first-child) { margin-left: 16px }
-	&:not(:last-child) { margin-right: 16px }
-}
-@media #{$smallScreen} {
-	.col {
-		&:not(:first-child) { margin-left: 0 }
-		&:not(:last-child) { margin-right: 0 }
-	}
-}
-
-// LINKS
-
-p a,
-li a {
-	text-decoration: none;
-	color: $link;
-	padding-bottom: 2px;
-	outline: none;
-	font-weight: bold;
-	
-	border-bottom: 2px solid rgba($link, 0.0);
-	transition: border-bottom .2s ease-out;
-	
-	&:hover,
-	&:focus,
-	&:active { border-bottom: 2px solid rgba($link, 1.0); }
-}
-
-.github {
-	color: $github;
-		
-	&:hover,
-	&:focus,
-	&:active { border-bottom: 2px solid $github; }
-	@include highlight($github, $white);
-}
-
-.twitter {
-	color: $twitter;
-	
-	&:hover,
-	&:focus,
-	&:active { border-bottom: 2px solid $twitter; }
-	@include highlight($twitter, $white);
-}
-
-.medium {
-	color: $medium;
-	
-	&:hover,
-	&:focus,
-	&:active { border-bottom: 2px solid $medium; }
-	@include highlight($medium, $white);
-}
-
-.dribbble {
-	color: $dribbble;
-	
-	&:hover,
-	&:focus,
-	&:active { border-bottom: 2px solid $dribbble; }
-	@include highlight($dribbble, $white);
-}
-
-.keybase {
-	color: $keybase;
-	
-	&:hover { border-bottom: 2px solid $keybase; }
-	@include highlight($keybase, $white);
+	padding: 16px;
 }
