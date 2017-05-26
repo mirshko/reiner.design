@@ -464,7 +464,6 @@ ol {
   ul li,
   ol li {
     margin-bottom: 12px;
-    word-break: break-all;
     word-wrap: break-word; }
 
 .flex-grid {
@@ -488,7 +487,7 @@ main a {
   text-decoration: none;
   color: #2962FF;
   outline: none;
-  font-weight: bold;
+  font-weight: 600;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: rgba(41, 98, 255, 0);
