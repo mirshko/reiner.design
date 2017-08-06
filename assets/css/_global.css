@@ -1,28 +1,28 @@
 * { box-sizing: inherit; }
 
-html { background-color: $white; }
+html { background-color: var(--white); }
 
 body {
 	-webkit-font-smoothing: antialiased;
-	font-family: "Work Sans", sans-serif;
+	font-family: var(--fontFamily);
 	
-	font-size: $fontSize;
+	font-size: var(--fontSize);
 	
-	line-height: $lineHeight;
+	line-height: var(--lineHeight);
 	margin: 0;
 }
 
 header, main, footer {
-	padding: $padding;
+	padding: var(--padding);
 	
-	@media (max-width: $mobile) { padding: $padding / 1.6; }
+	@media (max-width: var(--mobile)) { padding: var(--padding) / 1.6; }
 }
 
 header {
-	color: $white;
-	background-color: $primary;
+	color: var(--white);
+	background-color: var(--primary);
 	
-	transition: background-color $easing;
+	transition: background-color var(--easing);
 	
 	h1, h2 { text-transform: inherit; }
 	h1 {
@@ -30,17 +30,17 @@ header {
 		font-size: responsive 32px 80px;
 		upper-font-range: 1440px;
 		
-		@media (min-width: $mobile) {
+		@media (min-width: var(--mobile)) {
 			margin-bottom: 64px;
 			margin-top: 80px;
 		}
 	}
 	
 	h2 {
-		color: rgba($white, .70);
+		color: rgba(var(--white), .70);
 		
 		
-		@media (min-width: $mobile) { margin-bottom: 32px; }
+		@media (min-width: var(--mobile)) { margin-bottom: 32px; }
 	
 		font-size: 24px;
 		
@@ -48,23 +48,23 @@ header {
 			text-decoration: none;
 			outline: none;
 			
-			color: rgba($white, 1.0);
+			color: rgba(var(--white), 1.0);
 			
 			border-bottom-width: .125em;
 			border-bottom-style: solid;
-			border-bottom-color: rgba($white, 0.0);
+			border-bottom-color: rgba(var(--white), 0.0);
 			
-			transition: border-bottom-color $easing;
+			transition: border-bottom-color var(--easing);
 			
 			&:hover,
 			&:focus,
-			&:active { border-bottom-color: rgba($white, 1.0); }
+			&:active { border-bottom-color: rgba(var(--white), 1.0); }
 		}
 	}
 }
 
 main {
-	max-width: $widescreen;
+	max-width: var(--widescreen);
 	
 	p:first-child { margin-top: 0; }
 	
@@ -116,7 +116,7 @@ ol {
 .flex-grid {
 	display: flex;
 	
-	@media (max-width: $mobile) { display: block; }
+	@media (max-width: var(--mobile)) { display: block; }
 }
 
 .cols {
