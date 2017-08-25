@@ -2696,9 +2696,9 @@ gulp-rename@^1.2.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
 
-gulp-rucksack@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/gulp-rucksack/-/gulp-rucksack-0.1.3.tgz#7f98370e92602bb0cab369c0770c6abccd70175f"
+gulp-rucksack@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/gulp-rucksack/-/gulp-rucksack-0.1.4.tgz#59ab29a3d30c104ddf09757c7d82b34c15d81789"
   dependencies:
     gulp-util "~3.0.6"
     object-assign "^4.0.1"
