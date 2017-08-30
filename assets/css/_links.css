@@ -1,54 +1,54 @@
 main a {
 	text-decoration: none;
-	color: $link;
+	color: var(--link);
 	outline: none;
 	font-weight: 600;
 	
-	border-bottom-width: $borderThickness;
+	border-bottom-width: var(--borderThickness);
 	border-bottom-style: solid;
-	border-bottom-color: rgba($link, 0.0);
+	border-bottom-color: rgba(var(--link), 0.0);
 	
-	transition: border-bottom-color $easing;
+	transition: border-bottom-color var(--easing);
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom-color: rgba($link, 1.0); }
+	&:active { border-bottom-color: rgba(var(--link), 1.0); }
 }
 
 .github {
-	color: $github;
+	color: var(--github);
 		
 	&:hover,
 	&:focus,
-	&:active { border-bottom-color: $github; }
+	&:active { border-bottom-color: var(--github); }
 }
 
 .twitter {
-	color: $twitter;
+	color: var(--twitter);
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom-color: $twitter; }
+	&:active { border-bottom-color: var(--twitter); }
 }
 
 .medium {
-	color: $medium;
+	color: var(--medium);
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom-color: $medium; }
+	&:active { border-bottom-color: var(--medium); }
 }
 
 .dribbble {
-	color: $dribbble;
+	color: var(--dribbble);
 	
 	&:hover,
 	&:focus,
-	&:active { border-bottom-color: $dribbble; }
+	&:active { border-bottom-color: var(--dribbble); }
 }
 
 .keybase {
-	color: $keybase;
+	color: var(--keybase);
 	
-	&:hover { border-bottom-color: $keybase; }
+	&:hover { border-bottom-color: var(--keybase); }
 }
