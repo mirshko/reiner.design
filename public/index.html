@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head><!-- META -->
+    <meta charset="utf-8 /">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- PAGE TITLE -->
+    <title>Jeff Reiner; Web Developer & Designer</title>
+    <meta name="description" content="Jeff Reiner; Web Developer & Designer">
+    <meta name="author" content="Jeff Reiner (jeff@reiner.io)"><!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/index.css"><!-- GOOGLE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans:400,600"><!-- FAVICON -->
+    <link rel="icon" href="/favicon.ico">
+    <meta name="theme-color" content="#171A21">
+  </head>
+  <body role="document"><!-- SHAPES -->
+    <div class="shapes">
+      <div class="lesserWhite"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+    </div><!-- HEADER -->
+    <header role="header">
+      <div>
+        <a href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+            <use fill="#171A21" href="#a" figma:type="vector"></use>
+            <defs>
+              <path id="a" fill-rule="evenodd" d="M0 0h28v28H0V0zm12 16H4v8h2v-3h4v-2H6v-1h6v-2zm12 0h-8v8h2v-3h4v-2h-4v-1h6v-2zm-8-4V4h8v2h-6v1h4v2h-4v1h6v2h-8zm-4-8H4v2h4v4H6V8H4v4h6V6h2V4z"></path>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <h1>My name is Jeff Reiner, I’m a web developer & designer based in Berlin.</h1>
+      <h2>I’m currently not dealing with a CMS at <a class="link" href="https://www.contentful.com/">Contentful</a>. 😎</h2>
+    </header><!-- CONTENT -->
+    <main role="main">
+      <p class="lead">If you have any questions about my work, or design, or development, or just want to say hi, shoot me an <a href="mailto:jeff@reiner.io">email</a>.</p>
+      <div class="flex-divs">
+        <div>
+          <h2>PROJECTS</h2>
+          <ul>
+            <li class="chip" chip="WIP">Quarry</li>
+            <li class="chip" chip="WIP">Responsive CTA Builder</li>
+            <li>
+              <a target="_blank" href="http://thumbnailer.reiner.io">Wistia Thumbnail Generator</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://onshape.com">Onshape.com</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://noti.center">Noti</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>LINKS</h2>
+          <ul>
+            <li class="chip" chip="Under Construction"><!-- <a class="resume" target="_blank" href="http://resume.reiner.io"> -->Résumé<!-- </a> --></li>
+            <li>
+              <a class="github" target="_blank" href="http://github.com/mirshko">GitHub</a>
+            </li>
+            <li>
+              <a class="dribbble" target="_blank" href="http://dribbble.com/mirshko">Dribbble</a>
+            </li>
+            <li>
+              <a class="twitter" target="_blank" href="http://twitter.com/mirshko">Twitter</a>
+            </li>
+            <li>
+              <a class="medium" target="_blank" href="http://blog.reiner.io/">Medium</a>
+            </li>
+            <li>
+              <a class="keybase" target="_blank" href="https://keybase.io/mirshko">Keybase</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main><!-- SCRIPTS -->
+    <script src="js/main.js" defer></script><!-- DRIFT -->
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error('Drift snippet included twice.')) : (t.invoked = !0,
+        t.methods = [ 'identify', 'config', 'track', 'reset', 'debug', 'show', 'ping', 'page', 'hide', 'off', 'on' ],
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement('script'),
+          o.type = 'text/javascript', o.async = !0, o.crossorigin = 'anonymous', o.src = 'https://js.driftt.com/include/' + i + '/' + t + '.js',
+          n = document.getElementsByTagName('script')[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('pmityzh7bvu5');
+    </script><!-- GOOGLE ANAYLTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77203242-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

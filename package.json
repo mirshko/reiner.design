@@ -1,51 +1,40 @@
 {
-  "name": "www",
-  "version": "1.0.0",
-  "description": "",
-  "main": "build/index.html",
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "test": "gulp js"
+  "name": "www-reiner-io",
+  "description": "website",
+  "version": "0.0.1",
+  "author": "mirshko",
+  "ava": {
+    "verbose": "true"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mirshko/www.git"
+  "bugs": "https://github.com/mirshko/www-reiner-io/issues",
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "reshape-standard": "^3.0.0",
+    "spike": "^2.0.0",
+    "spike-css-standards": "^3.0.0",
+    "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.2",
+    "spike-page-id": "^1.0.0",
+    "sugarml": "^0.6.0",
+    "sugarss": "^1.0.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.4.0",
-    "browser-sync": "^2.11.1",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-rucksack": "^0.1.4",
-    "gulp-sass": "^2.1.1",
-    "gulp-uglify": "^2.1.2",
-    "gulp-useref": "^3.1.2",
-    "gulp-xo": "^0.15.0"
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   },
-  "xo": {
-    "envs": [
-      "browser",
-      "jquery"
-    ],
-    "globals": [
-      "Vue"
-    ],
-    "rules": {
-      "no-unused-vars": "off",
-      "prefer-arrow-callback": "off"
-    },
-    "quiet": true
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mirshko/www/issues"
-  },
-  "homepage": "https://github.com/mirshko/www#readme"
+  "homepage": "https://github.com/mirshko/www-reiner-io",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/mirshko/www-reiner-io",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "yarn lint -s",
+    "pretest": "yarn lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
 }
