@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="16" viewBox="0 0 49 16" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+  <use fill="#171A21" xlink:href="#a" figma:type="vector"/>
+  <defs>
+    <path id="a" fill-rule="evenodd" d="M0 0h49v16H0V0zm34 4h-8v8h2V9h4V7h-4V6h6V4zm11 0h-8v8h2V9h4V7h-4V6h6V4zm-30 8V4h8v2h-6v1h4v2h-4v1h6v2h-8zm-3-8H4v2h4v4H6V8H4v4h6V6h2V4z"/>
+  </defs>
+</svg>
