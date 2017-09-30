@@ -3,58 +3,17 @@ h2 a
 
 a:not(.logo)
   color: var(--link)
-
   text-decoration: none
   outline: none
   font-weight: 600
-  border-bottom-width: 3px
-  border-bottom-style: solid
-  border-bottom-color: color(var(--link) a(0%))
-  transition: border-bottom-color var(--easing)
+
+  &:after
+    margin-left: 4px
+    font-family: "Fira Code"
+    content: '->'
 
   &:hover,
   &:focus,
   &:active
-    border-bottom-color: color(var(--link) a(100%))
-
-  @media (--smallAndDown)
-    border-bottom-color: color(var(--link) a(100%))
-
-/*
-.github
-  color: var(--github)
-
-  &:hover,
-  &:focus,
-  &:active
-    border-bottom-color: var(--github)
-
-.twitter
-  color: var(--twitter)
-
-  &:hover,
-  &:focus,
-  &:active
-    border-bottom-color: var(--twitter)
-
-.medium
-  color: var(--medium)
-
-  &:hover,
-  &:focus,
-  &:active
-    border-bottom-color: var(--medium)
-
-.dribbble
-  color: var(--dribbble)
-
-  &:hover,
-  &:focus,
-  &:active
-    border-bottom-color: var(--dribbble)
-
-.keybase
-  color: var(--keybase)
-  &:hover
-    border-bottom-color: var(--keybase)
-*/
+    color: color(var(--white))
+    background-color: var(--link)

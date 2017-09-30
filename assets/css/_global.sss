@@ -3,6 +3,7 @@
 
 html
   background-color: var(--white)
+  color: var(--fontColor)
 
 body
   -webkit-font-smoothing: antialiased
@@ -22,6 +23,7 @@ h3,
 h4,
 h5,
 h6
+  color: var(--fontColor)
   font-family: var(--headerFontStack)
   text-transform: uppercase
   letter-spacing: 2px
@@ -32,7 +34,6 @@ header
     text-transform: inherit
 
   & h1
-    color: var(--black)
     line-height: 1.4
     font-size: responsive 32px 80px
     upper-font-range: 1440px
@@ -42,7 +43,7 @@ header
       margin-top: 80px
 
   & h2
-    color: var(--lessBlack)
+    color: var(--fontColor)
     font-size: responsive 24px 32px
 
     @media (--mediumAndUp)
@@ -58,13 +59,7 @@ main
 svg
   height: 96px
   width: 96px
-
-  &:hover
-    & use
-      animation-name: flipper
-      animation-iteration-count: infinite
-      animation-timing-function: step-start
-      animation-duration: 1s
+  fill: var(--fontColor)
 
 ol,
 ul
@@ -80,12 +75,12 @@ ul
 
     &.chip
       &:after
-        padding: 4px 8px
-        border-radius: 999px
+        padding: 4px 6px
         background-color: var(--lessWhite)
         margin-left: 8px
-        color: var(--lesserBlack)
+        color: var(--fontColor)
         font-size: .6em
+        /*vertical-align: super*/
         content: attr(chip)
 
 .flex-divs

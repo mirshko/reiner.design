@@ -3,16 +3,16 @@
   <head>
     <!-- META -->
     <block name="meta">
-      <meta charset="utf-8 /">
+      <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </block>
 
     <!-- PAGE TITLE -->
     <block name="title">
-      <title>Jeff Reiner; Web Developer & Designer</title>
+      <title>Jeff Reiner; Devsigner™</title>
       <meta name="description" content="Jeff Reiner; Web Developer & Designer" />
-      <meta name="author" content="Jeff Reiner (jeff@reiner.io)" />
+      <meta name="author" content="Jeff Reiner <jeff@reiner.io>" />
     </block>
 
     <!-- STYLESHEETS -->
@@ -20,7 +20,7 @@
       <link rel="stylesheet" href="css/index.css" />
 
       <!-- GOOGLE -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans:400,600" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" />
     </block>
 
     <!-- FAVICON -->
@@ -29,16 +29,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#171a21" />
-    <meta name="theme-color" content="#171A21" />
+    <meta name="theme-color" content="#171a21" />
   </head>
 
   <body role="document">
     <!-- SHAPES -->
     <div class="shapes">
-      <div class="lesserWhite"></div>
-      <div class="red"></div>
-      <div class="blue"></div>
-      <div class="yellow"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
 
     <!-- HEADER -->
@@ -55,41 +56,5 @@
     <block name="javascript">
       <script src="js/main.js" defer></script>
     </block>
-
-    <!-- DRIFT -->
-    <script>
-      !function() {
-        var t;
-        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error('Drift snippet included twice.')) : (t.invoked = !0,
-        t.methods = [ 'identify', 'config', 'track', 'reset', 'debug', 'show', 'ping', 'page', 'hide', 'off', 'on' ],
-        t.factory = function(e) {
-          return function() {
-            var n;
-            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e, n, o, i;
-          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement('script'),
-          o.type = 'text/javascript', o.async = !0, o.crossorigin = 'anonymous', o.src = 'https://js.driftt.com/include/' + i + '/' + t + '.js',
-          n = document.getElementsByTagName('script')[0], n.parentNode.insertBefore(o, n);
-        });
-      }();
-
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('pmityzh7bvu5');
-    </script>
-
-    <!-- GOOGLE ANAYLTICS -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-77203242-1', 'auto');
-      ga('send', 'pageview');
-    </script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+import './egg.js'
+
 function randomInt (min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
@@ -6,9 +8,12 @@ function randomInt (min, max) {
 
 const shapes = document.querySelectorAll('.shapes div')
 shapes.forEach(el => {
+  let color = '#' + Math.floor(Math.random() * 16777215).toString(16)
   let size = randomInt(40, 160)
   let positionX = randomInt(0, 100)
   let positionY = randomInt(0, 100)
+
+  el.style.backgroundColor = color
 
   size = `${size}px`
 
@@ -21,5 +26,3 @@ shapes.forEach(el => {
   el.style.top = positionY
   el.style.right = positionX
 })
-
-import './egg.js'
