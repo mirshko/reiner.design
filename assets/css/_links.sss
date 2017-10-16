@@ -1,16 +1,16 @@
 h2 a
   border-bottom-width: 4px !important
 
-a:not(.logo)
+a
   color: var(--link)
   text-decoration: none
   outline: none
   font-weight: 600
 
-  &:after
-    margin-left: 4px
-    font-family: "Fira Code"
-    content: '->'
+  &:not(.inline):after
+    margin-left: 8px
+    font-family: "Archia"
+    content: '→'
 
   &:hover,
   &:focus,
