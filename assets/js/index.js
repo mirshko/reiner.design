@@ -26,3 +26,11 @@ shapes.forEach(el => {
   el.style.top = positionY
   el.style.right = positionX
 })
+
+document.getElementById('year').textContent = new Date().getFullYear()
+
+function sendMessage() {
+  drift.on('ready', (api, payload) => {
+    api.showWelcomeMessage()
+  })
+}

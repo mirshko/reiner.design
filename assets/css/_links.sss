@@ -4,13 +4,17 @@ h2 a
 a
   color: var(--link)
   text-decoration: none
+  cursor: pointer
   outline: none
   font-weight: 600
 
-  &:not(.inline):after
-    margin-left: 8px
-    font-family: "Archia"
-    content: '→'
+  &:not(.inline)
+    cursor: e-resize
+
+    &:after
+      margin-left: 8px
+      font-family: "Archia"
+      content: '→'
 
   &:hover,
   &:focus,
