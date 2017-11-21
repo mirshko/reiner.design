@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#171a21" />
   </head>
 
-  <body role="document">
+  <body>
     <!-- SHAPES -->
     <div class="shapes">
       <div></div>
@@ -43,17 +43,17 @@
     </div>
 
     <!-- HEADER -->
-    <header role="header">
+    <header>
       <block name="header"></block>
     </header>
 
     <!-- CONTENT -->
-    <main role="main">
+    <main>
       <block name="content"></block>
     </main>
 
     <!-- FOOTER -->
-    <footer role="footer">
+    <footer>
       <block name="footer">
         <p>© <span id="year"></span> Jeff Reiner</p>
       </block>
@@ -63,6 +63,12 @@
     <block name="javascript">
       <script src="js/main.js" defer></script>
     </block>
+
+    <!-- SENTRY -->
+    <script src="https://cdn.ravenjs.com/3.20.1/raven.min.js" crossorigin="anonymous"></script>
+    <script>
+      Raven.config('https://5db4660bbb5b496f8bb770ff21ffe794@sentry.io/248162').install()
+    </script>
 
     <!-- DRIFT -->
     <script>

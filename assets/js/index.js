@@ -1,36 +1,43 @@
 import './egg.js'
 
-function randomInt (min, max) {
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min)) + min
-}
+Raven.context(function () {
+  const $ = document
 
-const shapes = document.querySelectorAll('.shapes div')
-shapes.forEach(el => {
-  let color = '#' + Math.floor(Math.random() * 16777215).toString(16)
-  let size = randomInt(40, 160)
-  let positionX = randomInt(0, 100)
-  let positionY = randomInt(0, 100)
+  function randomInt (min, max) {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min)) + min
+  }
 
-  el.style.backgroundColor = color
+  function shapeGenerator(divs) {
+    divs.forEach(el => {
+      let color = '#' + Math.floor(Math.random() * 16777215).toString(16)
+      let size = randomInt(40, 160)
+      let positionX = randomInt(0, 100)
+      let positionY = randomInt(0, 100)
 
-  size = `${size}px`
+      el.style.backgroundColor = color
 
-  el.style.width = size
-  el.style.height = size
+      size = `${size}px`
 
-  positionX = `${positionX}%`
-  positionY = `${positionY}%`
+      el.style.width = size
+      el.style.height = size
 
-  el.style.top = positionY
-  el.style.right = positionX
-})
+      positionX = `${positionX}%`
+      positionY = `${positionY}%`
 
-document.getElementById('year').textContent = new Date().getFullYear()
+      el.style.top = positionY
+      el.style.right = positionX
+    })
+  }
 
-function sendMessage() {
-  drift.on('ready', (api, payload) => {
-    api.showWelcomeMessage()
-  })
-}
+  const shapes = $.querySelectorAll('.shapes div')
+
+  try {
+    shapeGenerator(shapes)
+  } catch (err) {
+    Raven.captureException(err)
+  }
+
+  $.getElementById('year').textContent = new Date().getFullYear()
+});
