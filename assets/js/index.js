@@ -2,11 +2,17 @@ import './egg.js'
 
 const $ = document
 
-randomInt (min, max) => Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min))) + Math.ceil(min)
+function randomInt (min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min)) + min
+}
 
-randomHexColor () => `#${Math.floor(Math.random() * 16777215).toString(16)}`
+function randomHexColor () {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`
+}
 
-shapeGenerator (divs) {
+function shapeGenerator (divs) {
   divs.forEach(el => {
     let size = randomInt(40, 160)
     let positionX = randomInt(0, 100)
