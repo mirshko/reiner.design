@@ -1,12 +1,12 @@
 {
-  "name": "www-reiner-io",
+  "name": "reiner.io",
   "description": "website",
   "version": "0.0.1",
   "author": "mirshko",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/mirshko/www-reiner-io/issues",
+  "bugs": "https://github.com/mirshko/reiner.io/issues",
   "dependencies": {
     "normalize.css": "^7.0.0",
     "reshape-standard": "^3.0.0",
@@ -24,10 +24,10 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
-  "homepage": "https://github.com/mirshko/www-reiner-io",
+  "homepage": "https://github.com/mirshko/reiner.io",
   "main": "app.js",
   "private": true,
-  "repository": "https://github.com/mirshko/www-reiner-io",
+  "repository": "https://github.com/mirshko/reiner.io",
   "scripts": {
     "lint": "standard | snazzy",
     "precommit": "yarn lint -s",

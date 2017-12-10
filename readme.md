@@ -1,4 +1,4 @@
-# www.reiner.io
+# reiner.io
 
 website
 
