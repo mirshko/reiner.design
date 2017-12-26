@@ -1,0 +1,28 @@
+.grid
+  display: flex
+  flex-direction: column
+
+  @media (--largeAndUp)
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1rem
+
+  & > section
+    padding: 1rem 2rem
+
+    @media (--mediumAndUp)
+      padding: 1.5rem 3rem
+
+    @media (--largeAndUp)
+      padding: 2rem 4rem
+
+  & > .hello,
+  & > .footer
+    grid-column: span 3
+
+  & > .about,
+  & > .links
+    grid-column: span 2
+
+  & > .projects
+    grid-column: 2 / span 2

@@ -1,33 +1,52 @@
 <extends src='layout.html'>
-
-  <block name='header'>
-    <h1>My name is Jeff Reiner, I'm a devsigner based in Berlin.</h1>
-    <h2>I'm currently building the future of content infrastructure at <a class="inline" target="_blank" href="https://www.contentful.com/">Contentful</a> 😎</h2>
-  </block>
-
   <block name='content'>
-    <p class="lead">If you have any questions about my work, or design, or development, let's  <a class="inline" target="_blank" href="https://reiner.drift.com/jeff?schedule">find a time to chat</a>, or just <a class="inline" onclick="drift.on('ready', (api, payload) => api.showWelcomeMessage());">shoot me a message</a>.</p>
-    <div class="flex-divs">
-      <div>
-        <h2>Projects</h2>
-        <ul>
-          <li class="chip" chip="WIP">Quarry</li>
-          <li><a target="_blank" href="https://responsivectabuilder.com">Responsive CTA Builder</a></li>
-          <li><a target="_blank" href="https://thumbnailer.reiner.io">Wistia Thumbnail Generator</a></li>
-          <li><a target="_blank" href="https://www.onshape.com">Onshape.com</a></li>
-          <li><a target="_blank" href="https://noti.center">Noti</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Links</h2>
-        <ul>
-          <li class="chip" chip="Under Construction">Résumé</li>
-          <li><a class="github" target="_blank" href="https://github.com/mirshko">GitHub</a></li>
-          <li><a class="dribbble" target="_blank" href="https://dribbble.com/mirshko">Dribbble</a></li>
-          <li><a class="twitter" target="_blank" href="https://twitter.com/mirshko">Twitter</a></li>
-          <li><a class="medium" target="_blank" href="https://medium.com/@mirshko">Medium</a></li>
-          <li><a class="keybase" target="_blank" href="https://keybase.io/mirshko">Keybase</a></li>
-        </ul>
+    <div class="container">
+      <div class="grid skew-sections">
+        <section class='hello'>
+          <div>
+            <header>
+              <h1>My name is Jeff Reiner, I'm a devsigner based in Berlin.</h1>
+              <p>I'm currently building the future of content infrastructure at <a class='inline' target='_blank' href='https://www.contentful.com/'>Contentful</a></p>
+            </header>
+          </div>
+        </section>
+        <section class='about'>
+          <div>
+            <p>If you have any questions about my work, or design, or development, let's  <a target='_blank' href='https://reiner.drift.com/jeff?schedule'>find a time to chat</a>, or just <a onclick="drift.on('ready', (api, payload) => api.showWelcomeMessage());">shoot me a message</a>.</p>
+          </div>
+        </section>
+        <section class='projects'>
+          <h2 class='section-title -fade'>Projects</h2>
+          <div>
+            <ul>
+              <li>Quarry</li>
+              <li><a target='_blank' href='https://responsivectabuilder.com'>Responsive CTA Builder</a></li>
+              <li><a target='_blank' href='https://thumbnailer.reiner.io'>Wistia Thumbnail Generator</a></li>
+              <li><a target='_blank' href='https://www.onshape.com'>Onshape.com</a></li>
+              <li><a target='_blank' href='https://noti.center'>Noti</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class='links'>
+          <h2 class='section-title -fade'>Links</h2>
+          <div>
+            <ul>
+              <li><a href="" download>Résumé</a></li>
+              <li><a target='_blank' href='https://github.com/mirshko'>GitHub</a></li>
+              <li><a target='_blank' href='https://dribbble.com/mirshko'>Dribbble</a></li>
+              <li><a target='_blank' href='https://twitter.com/mirshko'>Twitter</a></li>
+              <li><a target='_blank' href='https://medium.com/@mirshko'>Medium</a></li>
+              <li><a target='_blank' href='https://keybase.io/mirshko'>Keybase</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class='footer'>
+          <div>
+            <footer>
+              <p>© <span id="year"></span> Jeff Reiner</p>
+            </footer>
+          </div>
+        </section>
       </div>
     </div>
   </block>

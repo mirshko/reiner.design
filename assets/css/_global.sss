@@ -4,18 +4,11 @@
 html
   background-color: var(--white)
   color: var(--fontColor)
-  upper-font-range: 1440px
+
   -webkit-font-smoothing: antialiased
   font-family: var(--fontStack)
   font-size: var(--fontSize)
-  line-height: var(--lineHeight)
-
-body
-  margin: 0
-  padding: var(--padding)
-
-  @media (--smallAndDown)
-    padding: var(--smallPadding)
+  line-height: 1.6
 
 h1,
 h2,
@@ -25,63 +18,15 @@ h5,
 h6
   color: var(--fontColor)
   font-family: var(--headerFontStack)
+  line-height: 1.4
   font-weight: normal
   letter-spacing: 2px
 
-header
-  & h1
-    line-height: 1.4
-    font-size: responsive 32px 80px
-
-    @media (--mediumAndUp)
-      margin-bottom: 64px
-      margin-top: 80px
-
-  & h2
-    color: var(--fontColor)
-    font-size: responsive 24px 32px
-
-    @media (--mediumAndUp)
-      margin-bottom: 32px
-
-.lead
-  margin-top: 0
-  font-size: 24px
-
-footer
-  & p
-    margin-top: 64px
-    margin-bottom: 0
-
 ol,
 ul
+  margin: 0
   list-style: none
   padding-left: 0
 
-  &:last-child
-    margin-bottom: 0
-
-  & li
+  & li:not(:last-child)
     margin-bottom: 12px
-    word-wrap: break-word
-
-    &.chip
-      &:after
-        background-color: var(--lessWhite)
-        margin-left: .3rem
-        color: var(--fontColor)
-        content: attr(chip)
-
-.flex-divs
-  display: block
-
-  @media (--mediumAndUp)
-    display: flex
-
-    margin-left: calc(-1rem / 1.5)
-    margin-right: calc(-1rem / 1.5)
-    margin-top: calc(-1rem / 1.5)
-
-    & > div
-      flex: 1
-      padding: calc(1rem / 1.5)

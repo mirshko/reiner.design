@@ -1,0 +1,19 @@
+.skew-sections
+  @media (--extraLargeAndDown)
+    overflow: hidden
+
+  & > section
+    transform: skew(var(--skew))
+
+    & > div,
+    &::before,
+    & > h2
+      transform: skew(-var(--skew))
+
+    &:nth-child(even)
+      transform: skew(-var(--skew))
+
+      & > div,
+      &::before,
+      & > h2
+        transform: skew(var(--skew))
