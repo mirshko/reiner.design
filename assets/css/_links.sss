@@ -1,23 +1,28 @@
-h2 a
-  border-bottom-width: 4px !important
-
 a
-  color: var(--link)
+  color: var(--white)
   text-decoration: none
   cursor: pointer
   outline: none
-  font-weight: 600
+  position: relative
 
-  &:not(.inline)
-    cursor: e-resize
-
-    &:after
-      margin-left: 8px
-      font-family: "Archia"
-      content: '→'
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    transform: skew(20deg)
+    transition: transform .2s
+    transform-origin: 0
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: var(--matteBlack)
 
   &:hover,
   &:focus,
   &:active
-    color: color(var(--white))
-    background-color: var(--link)
+    color: white
+
+    &::after
+      transform: skew(-20deg)

@@ -4,13 +4,13 @@
 html
   background-color: var(--white)
   color: var(--fontColor)
-
-body
+  upper-font-range: 1440px
   -webkit-font-smoothing: antialiased
   font-family: var(--fontStack)
   font-size: var(--fontSize)
   line-height: var(--lineHeight)
 
+body
   margin: 0
   padding: var(--padding)
 
@@ -25,19 +25,13 @@ h5,
 h6
   color: var(--fontColor)
   font-family: var(--headerFontStack)
-  text-transform: uppercase
   font-weight: normal
   letter-spacing: 2px
 
 header
-  & h1,
-  & h2
-    text-transform: inherit
-
   & h1
     line-height: 1.4
     font-size: responsive 32px 80px
-    upper-font-range: 1440px
 
     @media (--mediumAndUp)
       margin-bottom: 64px
@@ -50,23 +44,14 @@ header
     @media (--mediumAndUp)
       margin-bottom: 32px
 
-main
-  max-width: var(--widescreen)
-
-  & .lead
-    margin-top: 0
-    font-size: 24px
+.lead
+  margin-top: 0
+  font-size: 24px
 
 footer
   & p
     margin-top: 64px
     margin-bottom: 0
-    font-size: 16px
-
-svg
-  height: 96px
-  width: 96px
-  fill: var(--fontColor)
 
 ol,
 ul
@@ -82,11 +67,9 @@ ul
 
     &.chip
       &:after
-        padding: 4px 6px
         background-color: var(--lessWhite)
-        margin-left: 8px
+        margin-left: .3rem
         color: var(--fontColor)
-        font-size: .6em
         content: attr(chip)
 
 .flex-divs
@@ -95,10 +78,10 @@ ul
   @media (--mediumAndUp)
     display: flex
 
-    margin-left: -16px
-    margin-right: -16px
-    margin-top: -16px
+    margin-left: calc(-1rem / 1.5)
+    margin-right: calc(-1rem / 1.5)
+    margin-top: calc(-1rem / 1.5)
 
     & > div
       flex: 1
-      padding: 16px
+      padding: calc(1rem / 1.5)

@@ -1,5 +1,3 @@
-import './egg.js'
-
 const $ = document
 
 function randomInt (min, max) {
