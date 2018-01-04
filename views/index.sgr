@@ -23,7 +23,7 @@ extends(src='layout.sgr')
               |.
 
         section(class='projects')
-          h2.section-title.-fade Projects
+          h2(class='section-title -fade') Projects
           div
             ul
               li Quarry
@@ -33,7 +33,7 @@ extends(src='layout.sgr')
               li: a(target='_blank' href='https://noti.center') Noti
 
         section(class='links')
-          h2.section-title.-fade Links
+          h2(class='section-title -fade') Links
           div
             ul
               li Résumé
