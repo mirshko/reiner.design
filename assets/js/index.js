@@ -42,5 +42,3 @@ try {
 } catch (err) {
   console.log(err)
 }
-
-$.getElementById('year').textContent = new Date().getFullYear()

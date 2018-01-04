@@ -2,20 +2,19 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
-// const sugarml = require('sugarml')
+const sugarml = require('sugarml')
 const sugarss = require('sugarss')
 const env = process.env.SPIKE_ENV
 
 module.exports = {
   devtool: 'source-map',
-  matchers: { html: '*(**/)*.html', css: '*(**/)*.sss' },
-  ignore: ['**/layout.html', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
+  matchers: { html: '*(**/)*.sgr', css: '*(**/)*.sss' },
+  ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({
-    parser: false,
+    parser: sugarml,
     locals: (ctx) => {
       return {
-        pageId: pageId(ctx),
-        foo: 'bar'
+        pageId: pageId(ctx)
       }
     },
     minify: env === 'production'

@@ -1,0 +1,49 @@
+extends(src='layout.sgr')
+  block(name='content')
+    .container
+      .grid.skew-sections
+        section(class='hello')
+          div
+            header
+              h1 My name is Jeff Reiner, I'm a devsigner based in Berlin.
+              p
+                | I'm currently building the future of content infrastructure at
+                |
+                a(target='_blank' href='https://www.contentful.com/') Contentful
+
+        section(class='about')
+          div
+            p
+              | If you have any questions about my work, or design, or development, let's
+              |
+              a(target='_blank' href='https://reiner.drift.com/jeff?schedule') find a time to chat
+              |, or just
+              |
+              a(onclick="drift.on('ready', (api, payload) => api.showWelcomeMessage());") shoot me a message
+              |.
+
+        section(class='projects')
+          h2.section-title.-fade Projects
+          div
+            ul
+              li Quarry
+              li: a(target='_blank' href='https://responsivectabuilder.com') Responsive CTA Builder
+              li: a(target='_blank' href='https://thumbnailer.reiner.io') Wistia Thumbnail Generator
+              li: a(target='_blank' href='https://www.onshape.com') Onshape.com
+              li: a(target='_blank' href='https://noti.center') Noti
+
+        section(class='links')
+          h2.section-title.-fade Links
+          div
+            ul
+              li Résumé
+              li: a(target='_blank' href='https://github.com/mirshko') GitHub
+              li: a(target='_blank' href='https://dribbble.com/mirshko') Dribbble
+              li: a(target='_blank' href='https://twitter.com/mirshko') Twitter
+              li: a(target='_blank' href='https://medium.com/@mirshko') Medium
+              li: a(target='_blank' href='https://keybase.io/mirshko') Keybase
+
+        section(class='footer')
+          div
+            footer
+              p © 2018 Jeff Reiner
