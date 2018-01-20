@@ -26,10 +26,8 @@ extends(src='layout.sgr')
           h2(class='section-title -fade') Projects
           div
             ul
-              li Quarry
               li: a(target='_blank' href='https://responsivectabuilder.com') Responsive CTA Builder
               li: a(target='_blank' href='https://thumbnailer.reiner.io') Wistia Thumbnail Generator
-              li: a(target='_blank' href='https://www.onshape.com') Onshape.com
               li: a(target='_blank' href='https://noti.center') Noti
 
         section(class='links')
