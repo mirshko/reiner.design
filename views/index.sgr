@@ -5,7 +5,7 @@ extends(src='layout.sgr')
         section(class='hello')
           div
             header
-              h1(mdi) My name is Jeff Reiner, I'm a devsigner based in ~~Boston~~ Berlin.
+              h1(mdi) My name is Jeff Reiner, I'm a frontend designer based in Berlin.
               p
                 | I'm currently building the future of content infrastructure at
                 |
