@@ -1,0 +1,31 @@
+.button
+  /* margin: 10px */
+  height: 40px
+  line-height: 40px
+  padding: 0 16px
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(#000, .08)
+  background: var(--white)
+  color: var(--black)
+  border-radius: 4px
+  font-size: 16px
+  font-weight: 600
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: .05em
+  transition: all .15s ease
+  cursor: pointer
+  display: inline-flex
+
+  &:hover
+    color: color(var(--black) l(24%))
+    transform: translateY(-1px)
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(#000, .08)
+
+  &.-inverse
+    @extend .button
+    color: var(--white)
+    background: var(--black)
+
+    &:hover
+      color: var(--white)
+      background-color: color(var(--black) l(24%))

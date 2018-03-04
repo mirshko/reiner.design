@@ -1,0 +1,22 @@
+extends(src='layout.sgr')
+  block(name='title')
+    title Talks | Jeff Reiner; Frontend Designer
+
+  block(name='content')
+    .container
+      .grid.skew-sections
+        section(class='section -wide')
+          div
+            header
+              h1(mdi) Talks 📣
+
+        section(class='section')
+          div
+            h2 Ouch I Stepped On A Spike 🌵
+            a(class='button -inverse' href='https://www.youtube.com/watch?v=nNypxA3uphk') Recording
+            a(class='button' href='http://slides.com/mirshko/ouch-i-stepped-on-a-spike') Slides
+
+        section(class='section -wide')
+          div
+            footer
+              p © 2018 Jeff Reiner

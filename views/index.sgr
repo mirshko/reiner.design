@@ -2,46 +2,56 @@ extends(src='layout.sgr')
   block(name='content')
     .container
       .grid.skew-sections
-        section(class='hello')
+        section(class='section -wide')
           div
             header
-              h1(mdi) My name is Jeff Reiner, I'm a frontend designer based in Berlin.
+              h1(mdi) My name is Jeff Reiner, I'm a frontend designer (👨‍💻👨‍🎨) based in Berlin.
               p
                 | I'm currently building the future of content infrastructure at
                 |
-                a(target='_blank' href='https://www.contentful.com/') Contentful
+                a(class='link' target='_blank' href='https://www.contentful.com/') Contentful
 
-        section(class='about')
+        section(class='section')
           div
             p
               | If you have any questions about my work, or design, or development, let's
               |
-              a(target='_blank' href='https://reiner.drift.com/jeff?schedule') find a time to chat
+              a(class='link' target='_blank' href='https://reiner.drift.com/jeff?schedule') find a time to chat
               |, or just
               |
-              a(onclick="drift.on('ready', (api, payload) => api.showWelcomeMessage());") shoot me a message
+              a(class='link' onclick="drift.on('ready', (api, payload) => api.showWelcomeMessage());") shoot me a message
               |.
 
-        section(class='projects')
+        section(class='section')
           h2(class='section-title -fade') Projects
           div
             ul
-              li: a(target='_blank' href='https://responsivectabuilder.com') Responsive CTA Builder
-              li: a(target='_blank' href='https://thumbnailer.reiner.io') Wistia Thumbnail Generator
-              li: a(target='_blank' href='https://noti.center') Noti
+              li: a(class='link' target='_blank' href='https://responsivectabuilder.com') Responsive CTA Builder
+              li: a(class='link' target='_blank' href='https://thumbnailer.reiner.io') Wistia Thumbnail Generator
+              li: a(class='link' target='_blank' href='https://noti.center') Noti
 
-        section(class='links')
+        section(class='section')
           h2(class='section-title -fade') Links
           div
             ul
-              li Résumé
-              li: a(target='_blank' href='https://github.com/mirshko') GitHub
-              li: a(target='_blank' href='https://dribbble.com/mirshko') Dribbble
-              li: a(target='_blank' href='https://twitter.com/mirshko') Twitter
-              li: a(target='_blank' href='https://medium.com/@mirshko') Medium
-              li: a(target='_blank' href='https://keybase.io/mirshko') Keybase
+              li Résumé 📄
+              li
+                a(class='link' target='_blank' href='https://github.com/mirshko') GitHub
+                span(role='img') 🐙😺
+              li
+                a(class='link' target='_blank' href='https://dribbble.com/mirshko') Dribbble
+                span(role='img') 🏀
+              li
+                a(class='link' target='_blank' href='https://twitter.com/mirshko') Twitter
+                span(role='img') 🕊
+              li
+                a(class='link' target='_blank' href='https://medium.com/@mirshko') Medium
+                span(role='img') 📝
+              li
+                a(class='link' target='_blank' href='https://keybase.io/mirshko') Keybase
+                span(role='img') 🔐
 
-        section(class='footer')
+        section(class='section -wide')
           div
             footer
               p © 2018 Jeff Reiner

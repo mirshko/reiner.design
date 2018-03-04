@@ -11,8 +11,9 @@ html
     // PAGE TITLE
     block(name='title')
       title Jeff Reiner; Frontend Designer
-      meta(name='description' content='Jeff Reiner; Web Developer & Designer')
-      meta(name='author' content='Jeff Reiner <jeff@reiner.io>')
+
+    meta(name='description' content='Jeff Reiner; Web Developer & Designer')
+    meta(name='author' content='Jeff Reiner <jeff@reiner.io>')
 
     // STYLESHEETS
     block(name='stylesheets')
