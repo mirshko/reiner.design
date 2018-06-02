@@ -5,13 +5,12 @@
   @media (--largeAndUp)
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    grid-gap: 1rem
 
   & > section
     grid-column: span 2
 
-    &:nth-child(odd)
-      grid-column: 2 / span 2
+  & > section:nth-child(odd)
+    grid-column: 2 / span 2
 
-    &.-wide
-      grid-column: span 3
+  & > section.-wide
+    grid-column: span 3

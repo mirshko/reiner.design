@@ -1,18 +1,24 @@
-.-fade
-  animation-name: fade
-  animation-timing-function: ease-in
-  animation-duration: 1s
-
 .section-title
-  position: absolute
   text-transform: uppercase
-  right: 2rem
-  user-select: none
   color: currentColor
   mix-blend-mode: overlay
-  margin: 0
-  font-family: var(--fontStack)
+  margin-top: 0
+  margin-bottom: .5rem
   font-weight: 900
-  font-size: responsive 1.25rem 3rem
-  line-height: 2rem
-  content: attr(data-title)
+  font-size: responsive 1.5rem 3rem
+
+  @media (--mediumAndUp)
+    margin-bottom: 2rem
+
+  @media (--extraLargeAndUp)
+    margin-bottom: 3rem
+
+.section
+  background-color: #fff
+  padding: calc(1rem - .5rem)
+
+  @media (--mediumAndUp)
+    padding: calc(2rem - .5rem)
+
+  @media (--largeAndUp)
+    padding: calc(3rem - .5rem) calc(4rem - .5rem)
