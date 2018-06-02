@@ -17,7 +17,7 @@ html
 
     // STYLESHEETS
     block(name='stylesheets')
-      link(rel='preload' href='/css/index.css' as='style')
+      link(rel='stylesheet' href='/css/index.css')
 
     // FAVICON
     link(rel='icon' href='/favicon.png')
