@@ -4,14 +4,15 @@
 
 [[redirects]]
   from = "/thumbnailer/*"
-  to = "https://thumbnailer-reiner.netlify.com/:splat"
+  to = "https://thumbnailer.netlify.com/:splat"
   status = 200
 
 [[headers]]
-  for = "/*"
+  for = "/"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Link = '''
-    </css/index.css>; rel=preload; as=style, \
-    </js/main.js>; rel=preload; as=script'''
+    Link = [
+      "</css/index.css>; rel=preload; as=stylesheet",
+      "</js/main.js>; rel=preload; as=script"
+    ]
