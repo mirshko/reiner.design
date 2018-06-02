@@ -2,11 +2,6 @@
   publish = "public"
   command = "yarn prod"
 
-[[redirects]]
-  from = "/thumbnailer/*"
-  to = "https://thumbnailer.netlify.com/:splat"
-  status = 200
-
 [[headers]]
   for = "/"
   [headers.values]

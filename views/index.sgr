@@ -25,7 +25,7 @@ extends(src='layout.sgr')
             h2(class='section-title') Projects
             ul
               li: a(class='link' target='_blank' href='https://responsivectabuilder.com') Responsive CTA Builder
-              li: a(class='link' target='_blank' href='https://thumbnailer.reiner.io') Wistia Thumbnail Generator
+              li: a(class='link' target='_blank' href='https://thumbnailer.reiner.design') Wistia Thumbnail Generator
               li: a(class='link' target='_blank' href='https://noti.center') Noti
 
         section(class='section')
