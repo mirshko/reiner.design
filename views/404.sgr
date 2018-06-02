@@ -1,0 +1,12 @@
+extends(src='layout.sgr')
+  block(name='content')
+    .container
+      .grid
+        section(class='section -wide')
+          div
+            header
+              h1 Page Not found 😱
+              p
+                | Looks like you've followed a path that leads nowhere.
+                |
+                a(class='link' href='/') Take me somewhere safe!

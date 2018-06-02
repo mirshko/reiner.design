@@ -1,7 +1,7 @@
 extends(src='layout.sgr')
   block(name='content')
     .container
-      .grid.skew-sections
+      .grid
         section(class='section -wide')
           div
             header
