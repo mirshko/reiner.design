@@ -2,7 +2,7 @@ extends(src='layout.sgr')
   block(name='content')
     .container
       .grid
-        section(class='section -wide')
+        section(class='section')
           div
             header
               h1 Page Not found 😱
