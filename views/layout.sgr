@@ -13,7 +13,7 @@ html
       title Jeff Reiner; Frontend Designer
 
     meta(name='description' content='Jeff Reiner; Frontend Designer')
-    meta(name='author' content='Jeff Reiner <jeff@reiner.io>')
+    meta(name='author' content='Jeff Reiner <jeff@reiner.design>')
 
     // STYLESHEETS
     block(name='stylesheets')
