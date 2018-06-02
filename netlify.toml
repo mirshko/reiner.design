@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm run prod"
+  command = "yarn prod"
 
 [[redirects]]
   from = "/thumbnailer/*"
@@ -12,7 +12,3 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Link = [
-      "</css/index.css>; rel=preload; as=stylesheet",
-      "</js/main.js>; rel=preload; as=script"
-    ]
