@@ -17,7 +17,7 @@ extends(src='layout.sgr')
             p
               | If you have any questions about my work, or design, or development, feel free to
               |
-              a(class='link' target='_blank' href='mailto:jeff@reiner.io') shoot me an email
+              a(class='link' target='_blank' href='mailto:jeff@reiner.design') shoot me an email
               |.
 
         section(class='section')
