@@ -58,6 +58,9 @@ extends(src='layout.sgr')
               li
                 a(class='link' target='_blank' href='https://keybase.io/mirshko') Keybase
                 span(role='img') 🔐
+              li
+                a(class='link' target='_blank' href='https://photos.reiner.design') Photography
+                span(role='img') 📷
 
         section(class='section -wide')
           div
