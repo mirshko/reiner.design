@@ -31,8 +31,8 @@
   "repository": "https://github.com/mirshko/reiner.io",
   "scripts": {
     "lint": "standard | snazzy",
-    "precommit": "yarn lint -s",
-    "pretest": "yarn lint -s",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
     "test": "NODE_ENV=test ava",
     "start": "spike watch",
     "build": "spike compile",

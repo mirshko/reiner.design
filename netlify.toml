@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "yarn prod"
+  command = "npm run prod"
 
 [[headers]]
   for = "/"
