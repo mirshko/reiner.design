@@ -8,5 +8,5 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Link = [
-      "</css/index.css>; rel=preload; as=stylesheet"
+      "</css/index.css>; rel=preload; as=style"
     ]
