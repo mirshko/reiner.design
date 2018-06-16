@@ -8,13 +8,14 @@ const env = process.env.SPIKE_ENV;
 
 module.exports = {
   devtool: "source-map",
-  matchers: { html: "*(**/)*.sgr", css: "*(**/)*.sss" },
-  ignore: ["**/layout.sgr", "**/_*", "**/.*", "readme.md", "yarn.lock"],
+  matchers: { html: "*(**/)*.html", css: "*(**/)*.sss" },
+  ignore: ["**/layout.html", "**/_*", "**/.*", "readme.md", "yarn.lock"],
   reshape: htmlStandards({
-    parser: sugarml,
+    parser: false,
     locals: ctx => {
       return {
-        pageId: pageId(ctx)
+        pageId: pageId(ctx),
+        gaTrackingId: process.env.GA_TRACKING_ID
       };
     },
     minify: env === "production"

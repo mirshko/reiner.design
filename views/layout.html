@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <block name="title">
+      <title>Jeff Reiner; Frontend Designer</title>
+    </block>
+
+    <meta name="description" content="Jeff Reiner; Frontend Designer">
+    <meta name="author" content="Jeff Reiner <jeff@reiner.design>">
+    <meta name="theme-color" content="#171a21">
+
+    <link rel="icon" href="/favicon.png">
+
+    <block name="stylesheets">
+      <link rel="stylesheet" href="/css/index.css">
+    </block>
+
+    <include src="partials/_google-analytics.html"></include>
+  </head>
+
+  <body>
+    <main id="{{ pageId }}">
+      <block name="content"></block>
+    </main>
+
+    <block name="javascript">
+      <script src="/js/main.js" rel="preload" as="script" defer></script>
+    </block>
+  </body>
+</html>
