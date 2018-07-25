@@ -18,10 +18,7 @@ module.exports = {
     locals: ctx => {
       return {
         pageId: pageId(ctx),
-        gaTrackingId: process.env.GA_TRACKING_ID,
-        URL: process.env.URL || "",
-        DEPLOY_URL: process.env.DEPLOY_URL || "",
-        DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || ""
+        gaTrackingId: process.env.GA_TRACKING_ID
       };
     },
     minify: env === "production"
