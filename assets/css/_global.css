@@ -23,7 +23,6 @@ h5,
 h6 {
   color: var(--fontColor);
   line-height: 1.2;
-  /* letter-spacing: -0.6px; */
   font-size: responsive 1.5rem 2rem;
 }
 
@@ -53,7 +52,6 @@ h6 {
   font-weight: 600;
 
   &:hover,
-  &:active,
   &:focus {
     color: var(--black);
     background-color: var(--white);
