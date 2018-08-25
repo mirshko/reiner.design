@@ -7,8 +7,12 @@ html {
   text-rendering: optimizeLegibility;
 
   font-family: system-ui;
-  font-size: var(--fontSize);
+  font-size: responsive 24px 40px;
   line-height: 1.6;
+}
+
+body {
+  max-width: 1280px;
 }
 
 h1,
@@ -19,20 +23,43 @@ h5,
 h6 {
   color: var(--fontColor);
   line-height: 1.2;
-  letter-spacing: 2px;
-}
-
-h1 {
   font-size: responsive 1.5rem 2rem;
 }
 
-ol,
-ul {
+.list {
   margin: 0;
-  list-style: none;
-  padding-left: 0;
+  padding: 0;
 
-  & li:not(:last-child) {
+  list-style: none;
+
+  & *:not(:last-child) {
     margin-bottom: 12px;
+  }
+}
+
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.link {
+  color: var(--white);
+  background-color: var(--black);
+
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+    background-color: var(--white);
+  }
+}
+
+.copyright {
+  &::before {
+    content: "© 2018 "
   }
 }
