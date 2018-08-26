@@ -3,10 +3,12 @@
   command = "npm run prod"
 
 [[headers]]
-  for = "/"
+  for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Link = [
-      "</css/index.css>; rel=preload; as=style"
+      "</css/index.css>; rel=preload; as=style",
+      "</font/lunchtype24-regular-expanded-webfont.woff2>; rel=preload; as=font; crossorigin=crossorigin; nopush",
+      "</font/lunchtype24-medium-expanded-webfont.woff2>; rel=preload; as=font; crossorigin=crossorigin; nopush"
     ]
