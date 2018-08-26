@@ -35,7 +35,7 @@ h6 {
 
   & li::before {
     font-family: var(--fontFamilyBold);
-    content: "—";
+    content: "— ";
   }
 
   & > *:not(:last-child) {
